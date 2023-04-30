@@ -1,0 +1,111 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 25px;
+    text-align: left;
+}
+
+
+.questions {
+
+color: #cf2424;
+
+}
+
+.question {
+border-style: solid;
+}
+
+header {
+
+    background: linear-gradient(to bottom, black, grey); 
+    color: #cf2424;
+    padding: 35px;
+}
+
+h1 {
+    margin: 0;
+    text-align: left;
+}
+
+.title h1 { 
+    color:#ffffff
+}
+
+.answer {
+	padding-left : 50px;
+}
+
+.theAnswer {
+	padding-left : 100px;
+}
+
+.submit {
+background-color: #cf2424; /* Green */
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+
+}
+.container {
+    //display: flex;
+	text-align: left;
+}
+
+nav {
+    background:#8a8a8a; 
+    color: #fff;
+    padding: 15px;
+    flex-basis: 8%;
+}
+
+/* Reset default list styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for nav bar links */
+  nav li {
+    display: inline-block;
+    font-style:italic;
+    font-weight: bolder;
+    font-size:3ch;
+    padding-top: 5px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: #000; /* Adjust color as needed */
+    /* Add styles for normal state */
+  }
+  
+  /* Style for hover state */
+  nav a:hover {
+    background-color: #f0f0f0; /* Add desired background color */
+    /* Add additional styles for hover state */
+  }
+  
+
+  
+  img {
+    width: 100%; /* Make the image width 100% of the parent container */
+    max-height: 200px; /* Set max height for the image */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+  }
+  
+  h2 {
+    margin-top: 20px; /* Add margin between image and title */
+  }
+  
+  p {
+    margin-top: 10px; /* Add margin between title and paragraph */
+  }
+
+  

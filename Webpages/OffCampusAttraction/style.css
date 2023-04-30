@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    background: linear-gradient(to bottom, black, grey); 
+    color: #cf2424;
+    padding: 35px;
+}
+
+h1 {
+    margin: 0;
+    text-align: left;
+}
+
+.title h1 { 
+    color:#ffffff
+}
+
+.container {
+    display: flex;
+}
+
+nav {
+    background:#8a8a8a; 
+    color: #fff;
+    padding: 15px;
+    flex-basis: 8%;
+}
+
+/* Reset default list styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for nav bar links */
+  nav li {
+    display: inline-block;
+    font-style:italic;
+    font-weight: bolder;
+    font-size:3ch;
+    padding-top: 5px;
+  }
+  
+  nav a {
+    display: block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: #000; /* Adjust color as needed */
+    /* Add styles for normal state */
+  }
+  
+  /* Style for hover state */
+  nav a:hover {
+    background-color: #f0f0f0; /* Add desired background color */
+    /* Add additional styles for hover state */
+  }
+  
+
+section#content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-basis: 80%;
+    color:#cf2424;
+    
+}
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/** North HTML **/
+
+.box {
+    width: 800px; /* Set the width of the content box */
+    padding: 20px; /* Add padding around the content */
+    background-color: #f0f0f0; /* Set background color */
+    text-align: center; /* Center align content */
+    margin: 20px;
+    flex-basis: 30%;
+  
+  }
+
+  .box p { 
+    color:#000;
+  }
+  
+  
+  img {
+    width: 100%; /* Make the image width 100% of the parent container */
+    max-height: 200px; /* Set max height for the image */
+    object-fit: cover; /* Ensure the image covers the container without stretching */
+  }
+  
+  h2 {
+    margin-top: 20px; /* Add margin between image and title */
+  }
+  
+  p {
+    margin-top: 10px; /* Add margin between title and paragraph */
+  }
+
+  .buttons {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+button {
+	padding: 10px 20px;
+	margin: 0 10px;
+	border-radius: 5px;
+	background-color: #007bff;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+	border: none;
+}
+
+button:hover {
+	background-color: #0056b3;
+}

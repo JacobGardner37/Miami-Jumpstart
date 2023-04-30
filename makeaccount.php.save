@@ -1,0 +1,46 @@
+<?php
+
+function getVar($name) {
+	if (!isset($_REQUEST[$name])) {
+		return "";
+	}
+	else return htmlspecialchars($_REQUEST[$name]);
+}
+
+
+$FIELDS=array("Username", "Password", "Email", "Class");
+
+$myServer = "mssql-114226-0.cloudclusters.net, 10011";
+$myUser = "Group4";
+$myPass = "Password1234";
+$myDB = "Group4";
+
+$user=getVar("Username");
+$passwd = getVar("Password");
+$mail = getVar("Email");
+$class = getVar("Class");
+
+//connection to the database
+$connectionInfo = array( "Database"=>$myDB, "UID"=>$myUser, "PWD"=>$myPass);
+$conn = sqli_connect( $myServer, $connectionInfo)
+  or die("Couldn't open database $myDB");
+
+//declare the SQL statement that will query the database
+$query = "INSERT INTO User_Account ";
+$query .= "VALUES ($user, $passwd, $mail)";
+
+$stmt = sqli_query( $conn, $tsql);  
+
+if ( $stmt )  
+{  
+     echo "Statement executed.<br>\n";  
+}   
+else   
+{  
+     echo "Error in statement execution.\n";  
+     die( print_r( sqlsrv_errors(), true));  
+}  
+/* Free statement and connection resources. */  
+sqlsrv_free_stmt( $stmt);  
+sqlsrv_close( $conn);  
+?>  

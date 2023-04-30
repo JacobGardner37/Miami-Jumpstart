@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Miami Student Jumpstart - Create Account</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="jumpstart.css">
+  <link rel="stylesheet" type="text/css" href="dormReview.css">
+</head>
+<body>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <span class="padding-bottom--15">Leave A Review</span>
+              <form method='POST' action='offCampusHousing.php' id="stripe-login">
+		  <div class="rating">
+		    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+		    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+		    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+		    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+		    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+		  </div>
+		  <div>
+				<label for="dorms">Select your off campus housing:</label>
+<select name="dorms" id="dorms">
+  <option value="CKC">CKC</option>
+  <option value="Hometown Student Rentals">Hometown Student Rentals</option>
+  <option value="Park Place">Park Place</option> 
+  <option value="Red Brick Property Management">Red Brick Property Management</option>
+  <option value="Annex">Annex</option>
+  <option value="Campus Commons">Campus Commons</option> 
+  <option value="Gaslight Brownstone">Gaslight Brownstone</option>
+  <option value="Hawks Landing">Hawks Landing</option>
+  <option value="Level 27">Level 27</option>
+  <option value="Miami Preserve">Miami Preserve</option>
+  <option value="Oxford West">Oxford West</option>
+  <option value="The Verge">The Verge</option>
+</select>
+</div> <br>
+		<div class="field padding-bottom--24">
+		  <label for="feedback">Your Thoughts</label>
+		  <textarea rows="4"  cols="50" name="feedback" id="feedback" required> </textarea>
+		</div>
+                <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="Submit Review">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

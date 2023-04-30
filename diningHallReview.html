@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Miami Student Jumpstart - Create Account</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="jumpstart.css">
+  <link rel="stylesheet" type="text/css" href="dormReview.css">
+</head>
+<body>
+        <div class="formbg-outer">
+          <div class="formbg">
+            <div class="formbg-inner padding-horizontal--48">
+              <span class="padding-bottom--15">Leave A Review</span>
+              <form method='POST' action='diningReviews.php' id="stripe-login">
+		  <div class="rating">
+		    <input type="radio" name="rating" value="5" id="5"><label for="5">☆</label>
+		    <input type="radio" name="rating" value="4" id="4"><label for="4">☆</label>
+		    <input type="radio" name="rating" value="3" id="3"><label for="3">☆</label>
+		    <input type="radio" name="rating" value="2" id="2"><label for="2">☆</label>
+		    <input type="radio" name="rating" value="1" id="1"><label for="1">☆</label>
+		  </div>
+		  <div>
+				<label for="dorms">Select the dining hall:</label>
+<select name="dorms" id="dorms">
+  <option value="Garden Commons">Garden Commons</option>
+  <option value="Maplestreet Commons">Maplestreet Commons</option>
+  <option value="Martin Commons">Martin Commons</option>
+  <option value="Western Commons">Western Commons</option>
+</select>
+</div> <br>
+		<div class="field padding-bottom--24">
+		  <label for="feedback">Your Thoughts</label>
+		  <textarea rows="4"  cols="50" name="feedback" id="feedback" required> </textarea>
+		</div>
+                <div class="field padding-bottom--24">
+                  <input type="submit" name="submit" value="Submit Review">
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

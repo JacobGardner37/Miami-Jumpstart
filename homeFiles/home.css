@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+logo {
+    border-right: 1px solid black;
+}
+
+header {
+    background: linear-gradient(to bottom, black, grey);
+    color: #cf2424;
+    padding: 35px;
+}
+
+
+h1 {
+    margin: 0;
+    text-align: left;
+    font-size: 35px;
+}
+
+
+.title h1 {
+    color:#ffffff;
+    text-align: center;
+}
+
+
+.container {
+    display: flex;
+}
+
+
+nav {
+    background:#8a8a8a;
+    color: #fff;
+    padding: 15px;
+    flex-basis: 8%;
+}
+
+
+/* Reset default list styles */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+ 
+  /* Style for nav bar links */
+  nav li {
+    display: inline-block;
+    font-style:italic;
+    font-weight: bolder;
+    font-size:3ch;
+    padding-top: 5px;
+  }
+ 
+  nav a {
+    display: block;
+    padding: 10px 20px; /* Adjust padding as needed */
+    text-decoration: none;
+    color: #000; /* Adjust color as needed */
+    /* Add styles for normal state */
+  }
+ 
+  /* Style for hover state */
+  nav a:hover {
+    background-color: #f0f0f0; /* Add desired background color */
+    /* Add additional styles for hover state */
+  }
+ 
+
+
+section#content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    flex-basis: 100%;
+    color:#cf2424;
+}
+
+
+
+
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+
+/** North HTML **/
+
+
+.box {
+    width: 800px; /* Set the width of the content box */
+    height: 350px;
+    padding: 10px; /* Add padding around the content */
+    background-color: white; /* Set background color */
+    text-align: center; /* Center align content */
+    margin: 10px;
+    flex-basis: 30%;
+ 
+  }
+ 
+  img {
+    width: 350px;
+  } 
+ 
+  h2 {
+    margin-top: 20px; /* Add margin between image and title */
+  }
+ 
+  p {
+    margin-top: 10px; /* Add margin between title and paragraph */
+  }
+
+  .image-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .image-container img {
+    transition: opacity 0.3s ease;
+  }
+
+  .shadow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2);
+    opacity: 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+  }
+  .image-container:hover .shadow-overlay {
+    opacity: 1;
+  }
